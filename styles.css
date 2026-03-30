@@ -2,31 +2,34 @@
    CSS Custom Properties
    =========================== */
 :root {
-    /* Colors - Even Darker Teal & Yellow Theme */
-    --color-primary: #094d49;
-    /* Even Darker Teal */
-    --color-primary-dark: #073936;
-    /* Very Dark Teal */
-    --color-secondary: #052624;
-    /* Deep Teal */
-    --color-accent: #f5a623;
-    /* Yellow/Orange */
+    /* Colors - Aubergine Study Theme */
+    --color-primary: #221c2d;
+    /* Deep Plum-Charcoal */
+    --color-primary-dark: #181422;
+    /* Darker Plum */
+    --color-secondary: #0f0c15;
+    /* Near-Black Aubergine */
+    --color-accent: #c27b6f;
+    /* Muted Rose-Copper */
 
     /* Background Colors */
-    --color-bg-dark: #094d49;
-    /* Main Background - Even Darker Teal */
-    --color-bg-darker: #073936;
+    --color-bg-dark: #221c2d;
+    /* Main Background - Deep Plum-Charcoal */
+    --color-bg-darker: #181422;
     /* Darker Section Background */
     --color-bg-card: rgba(255, 255, 255, 0.06);
     /* Very subtle glassmorphism */
     --color-bg-card-hover: rgba(255, 255, 255, 0.1);
 
     /* Text Colors */
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #d1f0ee;
-    --color-text-muted: #a0d4d1;
-    --color-text-dark: #083d3a;
-    /* For light backgrounds/buttons */
+    --color-text-primary: #f2eeef;
+    /* Warm Off-White */
+    --color-text-secondary: #bfb3ba;
+    /* Dusty Mauve */
+    --color-text-muted: #837880;
+    /* Muted Plum-Grey */
+    --color-text-dark: #221c2d;
+    /* For accent backgrounds */
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -87,102 +90,6 @@ body {
 }
 
 /* ===========================
-   Greeting Banner
-   =========================== */
-.greeting-banner {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background: linear-gradient(135deg, var(--color-accent) 0%, #ffb74d 100%);
-    z-index: 999;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    animation: slideDown 0.5s ease;
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.greeting-content {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-md);
-    padding: var(--spacing-md) var(--spacing-lg);
-    position: relative;
-}
-
-.greeting-icon {
-    font-size: 2rem;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-}
-
-.greeting-icon svg {
-    stroke: var(--color-text-dark);
-}
-
-.greeting-text {
-    color: var(--color-text-dark);
-    font-size: 1.05rem;
-    font-weight: 500;
-    margin: 0;
-    flex-grow: 1;
-}
-
-.greeting-text strong {
-    font-weight: 700;
-    color: var(--color-secondary);
-}
-
-.greeting-close {
-    background: rgba(0, 0, 0, 0.1);
-    border: none;
-    color: var(--color-text-dark);
-    font-size: 1.75rem;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: var(--transition-fast);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    line-height: 1;
-}
-
-.greeting-close:hover {
-    background: rgba(0, 0, 0, 0.2);
-    transform: scale(1.1);
-}
-
-.greeting-banner.hidden {
-    animation: slideUp 0.3s ease forwards;
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    to {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-}
-
-/* ===========================
    Navigation
    =========================== */
 .nav {
@@ -190,7 +97,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(9, 77, 73, 0.95);
+    background: rgba(34, 28, 45, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -288,7 +195,7 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: radial-gradient(circle at 70% 50%, #0b5b57 0%, #094d49 100%);
+    background: radial-gradient(circle at 70% 50%, #2a2238 0%, #221c2d 100%);
 }
 
 /* Globe Effect */
@@ -408,13 +315,13 @@ body {
 .btn-primary {
     background: var(--color-accent);
     color: var(--color-text-dark);
-    box-shadow: 0 4px 16px rgba(245, 166, 35, 0.3);
+    box-shadow: 0 4px 16px rgba(194, 123, 111, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    background: #ffb74d;
-    box-shadow: 0 6px 24px rgba(245, 166, 35, 0.4);
+    background: #d4908a;
+    box-shadow: 0 6px 24px rgba(194, 123, 111, 0.4);
 }
 
 .btn-secondary {
@@ -592,7 +499,7 @@ body {
     background: var(--color-accent);
     border: 4px solid var(--color-bg-darker);
     border-radius: 50%;
-    box-shadow: 0 0 0 2px rgba(245, 166, 35, 0.5);
+    box-shadow: 0 0 0 2px rgba(194, 123, 111, 0.5);
 }
 
 .timeline-content {

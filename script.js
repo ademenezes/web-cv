@@ -1,19 +1,4 @@
 // ===========================
-// Greeting Banner Close
-// ===========================
-const greetingBanner = document.getElementById('greetingBanner');
-const greetingClose = document.getElementById('greetingClose');
-
-if (greetingClose && greetingBanner) {
-    greetingClose.addEventListener('click', () => {
-        greetingBanner.classList.add('hidden');
-        setTimeout(() => {
-            greetingBanner.style.display = 'none';
-        }, 300);
-    });
-}
-
-// ===========================
 // Smooth Scroll Navigation
 // ===========================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -280,12 +265,12 @@ if (emailLink) {
                 position: fixed;
                 bottom: 20px;
                 right: 20px;
-                background: linear-gradient(135deg, #00d9ff 0%, #00a8cc 100%);
-                color: #0a0e27;
+                background: linear-gradient(135deg, #c27b6f 0%, #d4908a 100%);
+                color: #221c2d;
                 padding: 1rem 1.5rem;
                 border-radius: 0.5rem;
                 font-weight: 600;
-                box-shadow: 0 4px 16px rgba(0, 217, 255, 0.3);
+                box-shadow: 0 4px 16px rgba(194, 123, 111, 0.3);
                 z-index: 10000;
                 animation: slideIn 0.3s ease;
             `;
@@ -366,7 +351,7 @@ window.addEventListener('scroll', debouncedScroll);
 // ===========================
 // Console Easter Egg
 // ===========================
-console.log('%c👋 Hi there!', 'font-size: 20px; font-weight: bold; color: #00d9ff;');
-console.log('%cInterested in how this was built?', 'font-size: 14px; color: #cbd5e1;');
-console.log('%cThis interactive CV showcases modern web development with vanilla JavaScript, CSS animations, and responsive design.', 'font-size: 12px; color: #94a3b8;');
-console.log('%cFeel free to reach out: ademenezes1@worldbank.org', 'font-size: 12px; color: #00d9ff;');
+console.log('%c👋 Hi there!', 'font-size: 20px; font-weight: bold; color: #c27b6f;');
+console.log('%cInterested in how this was built?', 'font-size: 14px; color: #bfb3ba;');
+console.log('%cThis interactive CV showcases modern web development with vanilla JavaScript, CSS animations, and responsive design.', 'font-size: 12px; color: #837880;');
+console.log('%cFeel free to reach out: ademenezes1@worldbank.org', 'font-size: 12px; color: #c27b6f;');
