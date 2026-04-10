@@ -46,12 +46,11 @@
                     <span class="hero-subtitle">Economist</span>
                 </h1>
                 <p class="hero-description">
-                    Development economist specialising in causal inference, impact evaluation, and programming-intensive research across water infrastructure, climate, and gender.
+                    Development economist specialised in causal inference, impact evaluation, and programming-intensive economics research.
                 </p>
                 <div class="hero-tags">
                     <span class="tag">Causal Inference</span>
                     <span class="tag">Impact Evaluation</span>
-                    <span class="tag">Water & Climate</span>
                     <span class="tag">Spatial Econometrics</span>
                 </div>
                 <div class="hero-cta">
@@ -72,7 +71,7 @@
                         Economist with over twelve years of experience in causal impact evaluation, spatial econometrics, and programming-intensive research across water, climate, and gender.
                     </p>
                     <p>
-                        Currently an Economist at the World Bank's Water Global Practice, I lead causal impact evaluations of private sector participation in water infrastructure across 2,920 utilities in Brazil using staggered difference-in-differences and event studies. I also lead the IBNET global tariff study covering 187 countries and nearly 3,000 utilities, and the EqualAqua gender analysis linking 4.1 million worker records to 5,344 utilities.
+                        Currently an Economist at the World Bank's Water Global Practice, I lead causal impact evaluations of private sector participation in water infrastructure across 2,920 utilities in Brazil using staggered difference-in-differences and event studies. I also lead the IBNET global tariff study covering 187 countries and nearly 10,000 utilities, the EqualAqua gender analysis linking 4.1 million worker records to 5,344 utilities, and the Global WaterSAP platform aggregating data from 6 international sources. I built a harmonized performance database consolidating 33,509 utilities from 32 national regulators.
                     </p>
                     <p>
                         My PhD research at LSE examines how climate change redistributes the burden of vector-borne disease using causal inference and spatial econometrics. I have built an automated systematic review engine screening 53,000+ papers, designed interactive dashboards in R Shiny and Python Dash, and taught Applied Environmental Economics to 300+ students for three years at LSE.
@@ -84,7 +83,7 @@
                         <div class="highlight-label">Years Experience</div>
                     </div>
                     <div class="highlight-card">
-                        <div class="highlight-number">6</div>
+                        <div class="highlight-number">10</div>
                         <div class="highlight-label">Digital Platforms Built</div>
                     </div>
                     <div class="highlight-card">
@@ -123,6 +122,9 @@
                             <li><strong>WaterSAP Platform:</strong> Led regulatory gap assessments for Brazil across 5,500+ municipalities. Built sector diagnostic platform, MACC investment simulator, and Water Tariff Explorer.</li>
                             <li><strong>Flagship & FCV:</strong> Contributed to GP flagship report <em>Continental Drying</em>, Somalia CCDR, and CLEAR Water diagnostics.</li>
                             <li><strong>Research Infrastructure:</strong> Built automated systematic review engine screening 53,000+ papers using NLP, text mining, and PRISMA protocol.</li>
+                            <li><strong>Global Data Platform:</strong> Built Global WaterSAP aggregating data from 6 international sources (World Bank, FAO, JMP, GLAAS, OECD, Space2Stats) with automated report generation in PDF, Word, and PowerPoint.</li>
+                            <li><strong>Data Infrastructure:</strong> Harmonized water utility performance database consolidating 33,509 utilities from 32 national regulators with LLM-powered multilingual PDF extraction.</li>
+                            <li><strong>Automated Data Collection:</strong> Built production scraping system extracting 7,794+ tariff records from 82+ countries across 31 languages using LLM-powered extraction and Playwright.</li>
                         </ul>
                     </div>
                 </div>
@@ -209,9 +211,15 @@
     <section class="section" id="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="platforms">Data Platforms</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="engineering">Data Engineering</button>
+            </div>
             <div class="projects-grid">
                 <!-- WaterSAP Platform -->
-                <div class="project-card" data-aos="fade-up">
+                <div class="project-card" data-aos="fade-up" data-category="platforms">
                     <div class="project-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -229,7 +237,7 @@
                 </div>
 
                 <!-- MACC Dashboard -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="platforms">
                     <div class="project-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -248,7 +256,7 @@
                 </div>
 
                 <!-- Water Tariff Explorer -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-category="platforms">
                     <div class="project-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -267,24 +275,8 @@
                     <span class="project-link">Internal Tool</span>
                 </div>
 
-                <!-- IBNET Analysis Suite -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="project-title">IBNET Tariff Analysis Suite</h3>
-                    <p class="project-tech">Python • ML Clustering • Meta-regression</p>
-                    <p class="project-description">
-                        Automated econometric analysis pipeline generating presentations, affordability rankings, and ML-based clustering analysis for 23,592 tariff records across 187 countries.
-                    </p>
-                    <span class="project-link">Analytical Pipeline</span>
-                </div>
-
                 <!-- Triple Burden -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400" data-category="platforms">
                     <div class="project-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -300,7 +292,7 @@
                 </div>
 
                 <!-- Automated Lit Review -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500" data-category="engineering">
                     <div class="project-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -314,6 +306,96 @@
                         31-script automated pipeline for systematic evidence synthesis on water investment multipliers. Integrates OpenAlex API with deduplication, PDF extraction, and PRISMA-compliant screening.
                     </p>
                     <span class="project-link">Knowledge Toolkit</span>
+                </div>
+
+                <!-- Global WaterSAP -->
+                <div class="project-card" data-aos="fade-up" data-category="platforms">
+                    <div class="project-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h3 class="project-title">Global WaterSAP</h3>
+                    <p class="project-tech">Python (Reflex) • SQLite • Plotly • Report Builder</p>
+                    <p class="project-description">
+                        Unified global water sector data platform aggregating 6 international sources (World Bank, FAO AQUASTAT, JMP, GLAAS, OECD, Space2Stats). Features interactive globe, 40+ indicators, country profiles, side-by-side comparison, subnational choropleth maps, and automated report generation in PDF, Word, and PowerPoint.
+                    </p>
+                    <span class="project-link">Internal Platform</span>
+                </div>
+
+                <!-- IBNET Tariff Explorer Portal -->
+                <div class="project-card" data-aos="fade-up" data-category="platforms">
+                    <div class="project-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">IBNET Tariff Explorer Portal</h3>
+                    <p class="project-tech">Next.js 14 • MapLibre GL JS • Playwright • GPT-4o</p>
+                    <p class="project-description">
+                        Interactive data portal with 222 country profiles and 9,995 utilities (2,920 IBNET + 7,075 scraped from 82+ countries via automated LLM-powered extraction in 31 languages). Features 8 choropleth map indicators, multi-metric affordability analysis, and sortable utility tables with block tariff schedules.
+                    </p>
+                    <span class="project-link">In Development</span>
+                </div>
+
+                <!-- Global Water Utility Performance Database -->
+                <div class="project-card" data-aos="fade-up" data-category="platforms">
+                    <div class="project-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">Global Water Utility Performance Database</h3>
+                    <p class="project-tech">Python • Claude LLM • SQLite • Parquet</p>
+                    <p class="project-description">
+                        Harmonized database consolidating 33,509 utilities from 32 national regulators across 325 indicators and 3.0M+ observations (1991-2026). Uses LLM-powered extraction (Claude) to process multilingual regulatory PDF reports. Includes interactive dashboard with data quality scoring and 54 unified performance indicators.
+                    </p>
+                    <span class="project-link">Research Database</span>
+                </div>
+
+                <!-- Privatization Impact Study -->
+                <div class="project-card" data-aos="fade-up" data-category="research">
+                    <div class="project-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">Privatization Impact on Water Utilities</h3>
+                    <p class="project-tech">Python • R • Staggered DiD • Callaway-Sant'Anna • Goodman-Bacon</p>
+                    <p class="project-description">
+                        Causal econometrics study evaluating the impact of private sector participation on water utility performance in Brazil. Implements 5 identification strategies including TWFE, event studies, IPW-DiD, Callaway-Sant'Anna group-time ATTs, and Goodman-Bacon decomposition. Links 4.1M RAIS worker records to SNIS utility data across 5,570 municipalities.
+                    </p>
+                    <span class="project-link">Working Paper</span>
+                </div>
+
+                <!-- Gender Dynamics in Water Workforce -->
+                <div class="project-card" data-aos="fade-up" data-category="research">
+                    <div class="project-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">Gender Dynamics in Water Workforce</h3>
+                    <p class="project-tech">Python • R • Oaxaca-Blinder • FFL Quantile • RDD</p>
+                    <p class="project-description">
+                        Econometric gender study examining employment and wage gaps across Brazil's water and sanitation sector using 4.1M RAIS worker records (2006-2023). Applies Oaxaca-Blinder decomposition, unconditional quantile regression (FFL), regression discontinuity at the 100-employee threshold, and panel fixed effects across 5,344 utilities.
+                    </p>
+                    <span class="project-link">Working Paper</span>
                 </div>
 
             </div>
@@ -333,6 +415,7 @@
                         <span class="skill-tag skill-expert">Python</span>
                         <span class="skill-tag skill-advanced">Stata</span>
                         <span class="skill-tag skill-advanced">SQL</span>
+                        <span class="skill-tag skill-advanced">BigQuery</span>
                     </div>
                 </div>
 
@@ -347,6 +430,9 @@
                         <span class="skill-tag skill-advanced">TypeScript</span>
                         <span class="skill-tag skill-advanced">D3.js</span>
                         <span class="skill-tag skill-advanced">Leaflet</span>
+                        <span class="skill-tag skill-advanced">MapLibre GL JS</span>
+                        <span class="skill-tag skill-advanced">Plotly</span>
+                        <span class="skill-tag skill-advanced">Quarto</span>
                         <span class="skill-tag skill-intermediate">HTML/CSS</span>
                     </div>
                 </div>
@@ -359,6 +445,8 @@
                         <span class="skill-tag skill-expert">QGIS</span>
                         <span class="skill-tag skill-expert">GeoJSON</span>
                         <span class="skill-tag skill-expert">Satellite Imagery</span>
+                        <span class="skill-tag skill-advanced">Parquet</span>
+                        <span class="skill-tag skill-advanced">TopoJSON</span>
                     </div>
                 </div>
 
@@ -374,6 +462,17 @@
                         <span class="skill-tag skill-advanced">RDD</span>
                         <span class="skill-tag skill-advanced">Machine Learning</span>
                         <span class="skill-tag skill-advanced">NLP</span>
+                    </div>
+                </div>
+
+                <!-- Data Engineering & AI -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="skill-category-title">Data Engineering & AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-expert">ETL Pipelines</span>
+                        <span class="skill-tag skill-expert">Web Scraping</span>
+                        <span class="skill-tag skill-advanced">LLM Integration</span>
+                        <span class="skill-tag skill-advanced">Playwright</span>
                     </div>
                 </div>
             </div>
@@ -460,7 +559,7 @@
                     </div>
                     <h3 class="education-degree">PhD in Environmental Policy</h3>
                     <p class="education-school">London School of Economics (LSE)</p>
-                    <p class="education-date">2018 - 2026</p>
+                    <p class="education-date">2026</p>
                 </div>
 
                 <div class="education-card" data-aos="fade-up" data-aos-delay="100">
@@ -473,7 +572,7 @@
                     </div>
                     <h3 class="education-degree">MSc Environmental Sciences</h3>
                     <p class="education-school">University of East Anglia (UK) — Chevening Scholar</p>
-                    <p class="education-date">2016 - 2017</p>
+                    <p class="education-date">2017</p>
                 </div>
 
                 <div class="education-card" data-aos="fade-up" data-aos-delay="200">
@@ -486,7 +585,7 @@
                     </div>
                     <h3 class="education-degree">MSc Development Studies</h3>
                     <p class="education-school">University of Antwerp (Belgium)</p>
-                    <p class="education-date">2013 - 2014</p>
+                    <p class="education-date">2014</p>
                 </div>
             </div>
         </div>
@@ -497,9 +596,6 @@
         <div class="container">
             <h2 class="section-title">Get in Touch</h2>
             <div class="contact-content">
-                <p class="contact-intro">
-                    Interested in discussing data science, risk analytics, or dashboard development?
-                </p>
                 <div class="contact-info">
                     <div class="contact-item">
                         <span class="contact-icon">

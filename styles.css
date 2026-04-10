@@ -2,33 +2,33 @@
    CSS Custom Properties
    =========================== */
 :root {
-    /* Colors - Aubergine Study Theme */
-    --color-primary: #221c2d;
-    /* Deep Plum-Charcoal */
-    --color-primary-dark: #181422;
-    /* Darker Plum */
-    --color-secondary: #0f0c15;
-    /* Near-Black Aubergine */
-    --color-accent: #c27b6f;
-    /* Muted Rose-Copper */
+    /* Colors - Sophisticated Teal Theme */
+    --color-primary: #162b3a;
+    /* Teal-Charcoal */
+    --color-primary-dark: #112230;
+    /* Darker Teal */
+    --color-secondary: #0d1a26;
+    /* Dark Teal */
+    --color-accent: #5fb8a8;
+    /* Muted Sage-Teal */
 
     /* Background Colors */
-    --color-bg-dark: #221c2d;
-    /* Main Background - Deep Plum-Charcoal */
-    --color-bg-darker: #181422;
+    --color-bg-dark: #162b3a;
+    /* Main Background - Teal-Charcoal */
+    --color-bg-darker: #112230;
     /* Darker Section Background */
     --color-bg-card: rgba(255, 255, 255, 0.06);
     /* Very subtle glassmorphism */
     --color-bg-card-hover: rgba(255, 255, 255, 0.1);
 
     /* Text Colors */
-    --color-text-primary: #f2eeef;
-    /* Warm Off-White */
-    --color-text-secondary: #bfb3ba;
-    /* Dusty Mauve */
-    --color-text-muted: #837880;
-    /* Muted Plum-Grey */
-    --color-text-dark: #221c2d;
+    --color-text-primary: #edf2f0;
+    /* Cool Off-White */
+    --color-text-secondary: #a8bab5;
+    /* Dusty Teal-Grey */
+    --color-text-muted: #6a8079;
+    /* Muted Teal-Grey */
+    --color-text-dark: #162b3a;
     /* For accent backgrounds */
 
     /* Spacing */
@@ -97,7 +97,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(34, 28, 45, 0.95);
+    background: rgba(22, 43, 58, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -195,7 +195,7 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: radial-gradient(circle at 70% 50%, #2a2238 0%, #221c2d 100%);
+    background: radial-gradient(circle at 70% 50%, #1e3545 0%, #162b3a 100%);
 }
 
 /* Globe Effect */
@@ -315,13 +315,13 @@ body {
 .btn-primary {
     background: var(--color-accent);
     color: var(--color-text-dark);
-    box-shadow: 0 4px 16px rgba(194, 123, 111, 0.3);
+    box-shadow: 0 4px 16px rgba(95, 184, 168, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    background: #d4908a;
-    box-shadow: 0 6px 24px rgba(194, 123, 111, 0.4);
+    background: #7dcebe;
+    box-shadow: 0 6px 24px rgba(95, 184, 168, 0.4);
 }
 
 .btn-secondary {
@@ -499,7 +499,7 @@ body {
     background: var(--color-accent);
     border: 4px solid var(--color-bg-darker);
     border-radius: 50%;
-    box-shadow: 0 0 0 2px rgba(194, 123, 111, 0.5);
+    box-shadow: 0 0 0 2px rgba(95, 184, 168, 0.5);
 }
 
 .timeline-content {
@@ -562,6 +562,47 @@ body {
 
 .timeline-details strong {
     color: var(--color-text-primary);
+}
+
+/* ===========================
+   Project Filters
+   =========================== */
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xl);
+}
+
+.filter-btn {
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-full);
+    color: var(--color-text-secondary);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-normal);
+    letter-spacing: 0.5px;
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--color-text-primary);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-btn.active {
+    background: var(--color-accent);
+    color: var(--color-text-dark);
+    border-color: var(--color-accent);
+    font-weight: 600;
+}
+
+.project-card.filter-hidden {
+    display: none;
 }
 
 /* ===========================

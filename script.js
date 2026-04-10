@@ -171,6 +171,35 @@ skillTags.forEach(tag => {
 });
 
 // ===========================
+// Project Filter Buttons
+// ===========================
+const filterBtns = document.querySelectorAll('.filter-btn');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        const cards = document.querySelectorAll('.project-card');
+
+        cards.forEach(card => {
+            if (filter === 'all' || card.dataset.category === filter) {
+                card.classList.remove('filter-hidden');
+                // Re-trigger animation
+                card.classList.remove('aos-animate');
+                requestAnimationFrame(() => {
+                    observer.observe(card);
+                });
+            } else {
+                card.classList.add('filter-hidden');
+            }
+        });
+    });
+});
+
+// ===========================
 // Project Card Interactions
 // ===========================
 const projectCards = document.querySelectorAll('.project-card');
@@ -265,12 +294,12 @@ if (emailLink) {
                 position: fixed;
                 bottom: 20px;
                 right: 20px;
-                background: linear-gradient(135deg, #c27b6f 0%, #d4908a 100%);
-                color: #221c2d;
+                background: linear-gradient(135deg, #5fb8a8 0%, #7dcebe 100%);
+                color: #162b3a;
                 padding: 1rem 1.5rem;
                 border-radius: 0.5rem;
                 font-weight: 600;
-                box-shadow: 0 4px 16px rgba(194, 123, 111, 0.3);
+                box-shadow: 0 4px 16px rgba(95, 184, 168, 0.3);
                 z-index: 10000;
                 animation: slideIn 0.3s ease;
             `;
@@ -351,7 +380,7 @@ window.addEventListener('scroll', debouncedScroll);
 // ===========================
 // Console Easter Egg
 // ===========================
-console.log('%c👋 Hi there!', 'font-size: 20px; font-weight: bold; color: #c27b6f;');
-console.log('%cInterested in how this was built?', 'font-size: 14px; color: #bfb3ba;');
-console.log('%cThis interactive CV showcases modern web development with vanilla JavaScript, CSS animations, and responsive design.', 'font-size: 12px; color: #837880;');
-console.log('%cFeel free to reach out: ademenezes1@worldbank.org', 'font-size: 12px; color: #c27b6f;');
+console.log('%c👋 Hi there!', 'font-size: 20px; font-weight: bold; color: #5fb8a8;');
+console.log('%cInterested in how this was built?', 'font-size: 14px; color: #a8bab5;');
+console.log('%cThis interactive CV showcases modern web development with vanilla JavaScript, CSS animations, and responsive design.', 'font-size: 12px; color: #6a8079;');
+console.log('%cFeel free to reach out: ademenezes1@worldbank.org', 'font-size: 12px; color: #5fb8a8;');
